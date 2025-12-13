@@ -1,0 +1,177 @@
+1️⃣ Basics (Must Know First)
+
+Before collections, revise:
+
+Object class
+
+equals() vs ==
+
+hashCode()
+
+Generics (<T>)
+
+👉 If you want, I can explain these one by one.
+
+
+
+2️⃣ Collection Framework Overview
+
+Understand this picture clearly:
+
+Iterable
+   |
+Collection
+   ├── List
+   ├── Set
+   └── Queue
+Map (separate hierarchy)
+
+
+Know:
+
+Why Collections are needed
+
+Difference between Collection and Map
+
+
+
+
+📌 LIST Interface (Ordered, Allows Duplicates)
+3️⃣ ArrayList
+
+Learn:
+
+Dynamic array concept
+
+Methods: add, get, set, remove, size
+
+Time complexity
+
+ArrayList<Integer> list = new ArrayList<>();
+list.add(10);
+list.add(20);
+System.out.println(list.get(0));
+
+
+
+
+4️⃣ LinkedList
+
+Learn:
+
+Singly & Doubly linked list logic
+
+When to use LinkedList vs ArrayList
+
+LinkedList<String> names = new LinkedList<>();
+names.add("Athi");
+names.addFirst("Java");
+
+
+
+
+📌 SET Interface (No Duplicates)
+5️⃣ HashSet
+
+Uses hashing
+
+No order
+
+Fast operations
+
+Set<Integer> set = new HashSet<>();
+set.add(10);
+set.add(10); // ignored
+
+
+
+
+6️⃣ LinkedHashSet
+
+Maintains insertion order
+
+
+
+7️⃣ TreeSet
+
+Sorted order
+
+Uses Red-Black Tree
+
+
+
+📌 QUEUE Interface (FIFO)
+8️⃣ PriorityQueue
+
+Min-heap by default
+
+Used in scheduling
+
+PriorityQueue<Integer> pq = new PriorityQueue<>();
+pq.add(30);
+pq.add(10);
+System.out.println(pq.poll()); // 10
+
+
+
+📌 MAP Interface (Key-Value Pair)
+9️⃣ HashMap ⭐ (Very Important)
+
+No duplicate keys
+
+Fast lookup
+
+HashMap<Integer, String> map = new HashMap<>();
+map.put(1, "Athi");
+System.out.println(map.get(1));
+
+
+
+🔟 LinkedHashMap
+
+Maintains insertion order
+
+1️⃣1️⃣ TreeMap
+
+Sorted keys
+
+📌 ITERATION (Very Important)
+
+Learn all ways:
+
+for-loop
+
+enhanced for-loop
+
+Iterator
+
+forEach + Lambda
+
+
+📌 ADVANCED CONCEPTS (Interview Level)
+
+After basics:
+
+Comparable vs Comparator
+
+Sorting collections
+
+Collections utility class
+
+Fail-fast vs Fail-safe
+
+Thread-safe collections
+
+ConcurrentHashMap
+
+
+
+🎯 How You Should Study (Best Method)
+
+Learn one collection
+
+Write 5 programs
+
+Solve 2 interview questions
+
+Compare time complexity
